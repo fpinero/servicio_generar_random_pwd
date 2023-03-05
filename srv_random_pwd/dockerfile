@@ -1,0 +1,6 @@
+FROM arm64v8/openjdk
+WORKDIR /app
+
+COPY ./target/srv_random_pwd-0.0.1-SNAPSHOT.jar /app
+
+ENTRYPOINT java -jar srv_random_pwd-0.0.1-SNAPSHOT.jar
