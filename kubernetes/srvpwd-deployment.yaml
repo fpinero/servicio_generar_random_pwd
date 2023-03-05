@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: srvpwd-app
+  labels:
+    app: srvpwd-app
+spec:
+#  replicas: 1
+  selector:
+    matchLabels:
+      app: srvpwd-app
+  template:
+    metadata:
+      labels:
+        app: srvpwd-app
+    spec:
+      containers:
+      - name: srvpwd-app
+        image: fpinero/srvpwd:0.0.1
+        ports:
+        - containerPort: 8080

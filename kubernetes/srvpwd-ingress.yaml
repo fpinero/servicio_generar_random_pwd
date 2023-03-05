@@ -1,0 +1,13 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: srvpwd-ingress
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: PathPrefix(`/genpwd`)
+    kind: Rule
+    services:
+    - name: srvpwd-service
+      port: 80
