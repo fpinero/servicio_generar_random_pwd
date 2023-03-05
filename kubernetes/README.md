@@ -23,3 +23,9 @@ kubectl apply -f srvpwd-service.yaml -n random-passwd
 ````
 kubectl apply -f srvpwd-ingress.yaml -n random-passwd
 ````
+
+* test application
+
+````
+curl "http://orck3s.n0-reply.com/genpwd"
+````
