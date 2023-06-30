@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: srvpwd-service
+  namespace: random-passwd
   labels:
     app: srvpwd-app
 spec:
