@@ -6,11 +6,17 @@
 kubectl create namespace random-passwd
 ````
 
-* deploying app
+* deploying app (ARM)
 
 ````
 kubectl apply -f srvpwd-deployment.yaml -n random-passwd
 ````
+
+* deploying app (AMD64)
+
+```bazaar
+kubectl apply -f srvpwd-amd64-deployment.yaml -n random-passwd
+```
 
 * deploy service
 

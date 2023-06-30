@@ -1,0 +1,7 @@
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY *.jar /app
+
+ENTRYPOINT java -jar srv_random_pwd-0.0.1-SNAPSHOT.jar
