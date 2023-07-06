@@ -24,11 +24,17 @@ kubectl apply -f srvpwd-amd64-deployment.yaml -n random-passwd
 kubectl apply -f srvpwd-service.yaml -n random-passwd
 `````
 
-* deploy ingress
+* deploy ingress for traefik
 
 ````
 kubectl apply -f srvpwd-ingress.yaml -n random-passwd
 ````
+
+* deploy ingress for ngnix
+
+```bazaar
+kubectl apply -f ingress-ngnix.yaml -n random-passwd
+```
 
 * test application
 
